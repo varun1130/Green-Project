@@ -1,0 +1,181 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family:  'Franklin Gothic Medium', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+body{
+  height: 100vh;
+  background-image: url(bg.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Wapper{
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  width : 530px; 
+  padding: 25px 40px;
+  margin: auto;  
+}
+.Wapper .heading h1{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.Input_field{
+  margin-bottom: 8px;
+  position: relative;
+  margin-bottom: 25px;
+  height: 45px;
+  width: 99%;
+}
+.Input_field #input{
+  font-size: large;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  background: transparent;
+  border-radius: 20px;
+  border : 2px solid rgba(255,255,255,0.2);
+}
+
+.Input_field i{
+  font-size: 25px;
+  position: absolute;
+  right: 10px;
+  top: 18px; 
+  color: white;
+}
+.Input_field #input::placeholder{
+  color:white;
+  padding: 10px;
+  font-size: large;
+}
+.forget{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  font-size: 16px; 
+}
+.forget #Remi{
+  cursor: pointer;
+  font-size: large;
+}
+.forget #link{
+  text-decoration: none;
+  font-size: large;
+  color: white; 
+}
+.forget #link:hover{
+text-decoration: underline;
+
+}
+.button { 
+  height: 40px;
+  width: 100%;
+}
+.button #LBTN{
+  cursor: pointer;
+  height: 100%;
+  color: white;
+  width:100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: border 0.30s;
+  font-size: 22px;
+}
+.button #LBTN:hover{ 
+  border: 1px solid rgba(255,255,255,0.6);
+}
+.sign_up{
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign_up #slink{
+  text-decoration: none;
+  color: white;
+}
+.sign_up #slink:hover{
+  text-decoration: underline;
+}
+.navBar{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding: 35px 0px;
+  height : 10vh;
+  background-color: rgba(15,15 ,15 ,0.1 );
+  justify-content: space-between;
+}
+.logo{
+  width: 15vw;
+}
+.logo h1{
+  font-size: 3em;
+}
+.navBar ul li{
+  width: auto;  
+  height :100%;
+  cursor: pointer;
+  list-style: none;
+  display:inline-block;
+  margin: 0px 20px ;
+  position: relative;
+}
+.navBar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color : white;
+}
+.navBar ul li::after{
+  content: '';
+  background-color: aqua;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: width 0.5s;
+}
+.navBar ul li:hover::after{
+  opacity: 1;
+  width: 100%;
+}
+.navBar button a{
+  text-decoration: none;
+  color: aqua;
+}
+button{
+  background: transparent;
+  text-decoration: none;
+  color: aqua;
+  text-transform: uppercase;
+  font-size: 13pt;
+  padding: 6px;
+  border: none;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.navBar ul button:hover{
+  background-color: aqua;
+  color: white;
+}
+.hLinks button a :hover{
+  color : white;
+}
