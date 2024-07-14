@@ -111,12 +111,11 @@ text-decoration: underline;
   text-decoration: underline;
 }
 .navBar{
-  width: 90%;
+  width: 99%;
   margin: auto;
   display: flex;
   align-items: center;
   padding: 35px 0px;
-  height : 10vh;
   background-color: rgba(15,15 ,15 ,0.1 );
   justify-content: space-between;
 }
