@@ -86,8 +86,9 @@ button{
 .context #text{
   width: 55%;
   font-size: medium;
+  font-size: small;
   font-stretch: expanded ;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-left: 10px;
   line-height: normal;
   text-align: justify;
@@ -108,10 +109,10 @@ button{
   height: 85%;
   margin-top: 50px;
   margin-left: 20px;
-  background-image: url(./green-energy-audit-.jpg );
+  background-image: url(./Bgimg.png );
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .section2{
   width: 100%;
