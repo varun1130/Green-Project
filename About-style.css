@@ -1,39 +1,33 @@
 *{
-  padding: 0px;
-  margin: 0px;
-  font-family:  'Franklin Gothic Medium', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.main{
+body{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6  )),url(./Renew-enegry.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .navBar{
-  width: 99%;
-  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 80px;
   display: flex;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
   align-items: center;
-  padding: 35px 0px;
   background-color: rgba(15,15 ,15 ,0.1 );
   justify-content: space-between;
 }
 .logo{
-  width: 15vw;
-}
-.logo h1{
-  font-size: 3em;
+  opacity: 0.7;
 }
 .navBar ul li{
   width: auto;  
   height :100%;
   cursor: pointer;
   font-size: large;
-  list-style: none;
   display:inline-block;
-  margin: 0px 20px ;
+  margin: 0px 20px;
   position: relative;
 }
 .navBar ul li a {
@@ -60,12 +54,10 @@
 }
 button{
   background: transparent;
-  text-decoration: none;
   color: aqua;
   text-transform: uppercase;
   font-size: 13pt;
   padding: 6px;
-  border: none;
   border: 1px solid rgba(0,0,0,0.4);
   border-radius: 10px;
   cursor: pointer;
@@ -77,18 +69,26 @@ button{
 .navBar ul button a:hover{
   color: white;
 }
+
+#section1{
+  width:100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6  )),url(./Renew-enegry.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+}
+
 .context{
   width:100%;
-  height: 75vh;
-  display: flex;
-  flex-direction: row;
+  height: 100vh;
 }
 .context #text{
+  margin-top: 150px;
   width: 55%;
   font-size: medium;
-  font-size: small;
-  font-stretch: expanded ;
-  margin-top: 70px;
   margin-left: 10px;
   line-height: normal;
   text-align: justify;
@@ -97,7 +97,7 @@ button{
 }
 .context #text #help{
   width: 100%;
-  height: 69%;
+  height: auto;
   margin-top: 25px;
   text-align: center;
   font-size: 100px;
@@ -114,9 +114,11 @@ button{
   background-position: center;
   background-size: contain;
 }
+
 .section2{
   width: 100%;
   height: 100vh;
+  background-attachment: fixed;
   background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url(./green-energy-audit-BG-.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -132,14 +134,13 @@ button{
 }
 .content2{
   width: 100%;
-  height: 75vh;
+  height: auto;
   display: flex;
   margin-top: 10px;
 }
 .content2 p{
   width:50%;
   line-height: normal;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   margin-top: 50px;
   margin-left: 20px;
@@ -147,15 +148,16 @@ button{
   text-align: justify;
 }
 .content2 #simg2{
-  width: 512px;
-  height: 85%;
-  margin-top: 50px;
+  width: 500px;
+  height:480px;
+  margin-top: auto;
   margin-left: 60px;
   background-image: url(./green-energy-audit-.jpg );
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .section3{
   width: 100%;
   height: 100vh;
@@ -197,4 +199,115 @@ button{
   background-repeat: no-repeat;
   background-position: center;
   background-size:contain;
+}
+
+
+
+
+@media  screen and (max-width: 1200px) {
+  
+  .context #text {
+    font-size:15px ;
+  }
+  .content2 p, .content3 p{
+    font-size: 20px;
+  }
+ .context #text #help , #heading{
+  font-size: 80px;
+ }
+ .content2 #simg2 , .content3 #simg3{
+    width: 400px;
+    height: 350px;
+    margin-top: 0;
+  }
+ 
+
+}
+@media  screen and (max-width: 900px) {
+  
+  .context #text{
+    font-size:13px ;
+  }
+ .context #text #help{
+  font-size: 60px;
+ }
+ .content2 , .content3{
+  height: auto;
+  width: auto;
+  }
+
+ .content2 p , .content3 p{
+  margin-top: 0;
+  font-size: 18px;
+  height: auto;
+  
+}
+.content2 #simg2 , .content3 #simg3{
+  height: auto;
+}
+
+}
+@media  screen and (max-width: 770px) {
+  
+  .context #text{
+    font-size:12px ;
+  }
+ .context #text #help{
+  font-size: 50px;
+ }
+}
+
+@media  screen and (max-width: 450px) {
+
+  .navBar ul li a{
+    font-size: 0.9rem;
+  }
+  .navBar ul button a{
+    font-size: 0.9rem;
+  }
+
+ 
+  #section1 , .content2 , .content3{
+    display: grid;
+    width: auto;
+  }
+  .content3{
+    width: auto;
+    height: auto;
+  }
+  .context #text{
+    margin-top: 100px;
+  }
+
+  .section2 #heading, .section3 #heading3{
+    font-size: 40px;
+  }
+
+  .content2{
+    height: auto;
+ 
+  }
+  .context #text{
+    width: 95%;
+    font-size: 10px;
+  }
+  .content2 p ,.content3 p{
+    margin: 0;
+    padding: 0 8px;
+    width: 95%;
+    font-size: 14px;
+  }
+ 
+  .image ,.section3 #simg3{
+    width:300px;
+    height: 130px;
+    margin: 4px auto;
+  }
+  .content2 #simg2{
+    width: 260px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+ 
 }
